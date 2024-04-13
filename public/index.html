@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" 
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous" type="text/javascript" 
+        charset="utf-8">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js" type="text/javascript" 
+        charset="utf-8">
+    </script>
+    <script src="js/chart-device-data.js" type="text/javascript" charset="utf-8"></script>
+    <link href="css/style.css" rel="stylesheet" />
+
+    <title>Air Quality Monitoring System</title>
+</head>
+
+<body>
+    <h1>Air Quality Monitoring System</h1>
+    <h1 class="flexHeader">
+        <span>
+            <span id="deviceCount">0 devices</span>
+            <select id="listOfDevices" class="select_box"></select>
+        </span>
+    </h1>
+    <h2>Select Data Type</h2>
+    <select id="dataOption">
+        <option value="realTime">Real-time Data</option>
+        <option value="last7Days">Last 7 Days Data</option>
+        <option value="last1Day">Last 1 Day Data</option>
+    </select>
+    <div class="canvas-container">
+        <div>
+            <h2>Temperature and Humidity plot</h2>
+            <canvas id="iotChart1"></canvas>
+        </div>
+        <div>
+            <h2>Gas Concentration plot</h2>
+            <canvas id="iotChart2"></canvas>
+        </div>
+    </div>
+</body>
+
+</html>
